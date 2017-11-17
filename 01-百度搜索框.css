@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+/*最外层容器*/
+#container{
+	width: 960px;
+	margin: 50px auto;
+	position: relative;
+}
+
+/*图片*/
+#container img{
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*搜索框容器*/
+#search_warpper{
+	width: 637px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 auto;
+	position: relative;
+	background: #FFA500;
+}
+
+/*搜索框*/
+#searchInput{
+	width: 521px;
+	height: 20px;
+	padding: 8px 7px;
+	border: 1px solid #CCCCCC;
+	display: block;
+	float: left;
+	font-size: 16px;
+	outline: none;
+	
+}
+/*文本框移上高亮*/
+#searchInput:hover{
+	border-color: #999;
+}
+/*文本框点击背景*/
+#searchInput:focus{
+	background: #f3faff;
+}
+
+/*百度按钮*/
+#search_warpper input[type=button] {
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
+	display: block;
+	border: none;
+	outline: none;
+	background: #3385ff;
+	color: #FFFFFF;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/*按钮移上高亮*/
+#search_warpper input[type=button]:hover{
+	background: #2D76E3;
+}
+
+/*搜索提示*/
+#searchTips {
+	position: absolute;
+	width: 535px;
+	border:1px solid #CCCCCC;
+	top:38px;
+	font-size: 12px;
+	text-align: left;
+	display: none;
+}
+
+/**/
+#searchTips li {
+	padding-left:5px ;
+	color: #789;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+/**/
+#searchTips li:hover{
+	background: #EEEEEE;
+}
+
+/**/
+#searchTips li > a{
+	float: right;
+	margin-right: 15px;
+	display: none;
+}
+
+/**/
+#searchTips li:hover > a{
+	display: block;
+}
+
+/*高亮提示*/
+.active{
+	
+	background: #EEEEEE;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
